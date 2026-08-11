@@ -1,6 +1,6 @@
 using MediatR;
-using MessagingService.Application.Common.Interfaces;
 using MessagingService.Application.Features.Notifications.DTOs;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace MessagingService.Application.Features.Notifications.Queries;
 
@@ -9,17 +9,23 @@ public record GetNotificationsQuery(DateTime? Cursor, int Take = 20) : IRequest<
 public class GetNotificationsQueryHandler : IRequestHandler<GetNotificationsQuery, (IEnumerable<NotificationDto> Items, DateTime? NextCursor)>
 {
     private readonly INotificationRepository _repo;
-    private readonly ICurrentUserService _currentUser; // get userId from context
+    private readonly IMemoryCache _cache;
+    private const string CacheKeyPrefix = "Notifications_";
 
-    public GetNotificationsQueryHandler(INotificationRepository repo, ICurrentUserService currentUser)
+    public GetNotificationsQueryHandler(INotificationRepository repo, IMemoryCache cache)
     {
         _repo = repo;
-        _currentUser = currentUser;
+        _cache = cache;
     }
 
     public async Task<(IEnumerable<NotificationDto> Items, DateTime? NextCursor)> Handle(GetNotificationsQuery request, CancellationToken ct)
     {
-        var userId = _currentUser.UserId;
-        return await _repo.GetUserNotificationsAsync(userId, request.Cursor, request.Take, ct);
+        string cacheKey = $"{CacheKeyPrefix}_{request.Cursor}_{request.Take}";
+
+        return await _cache.GetOrCreateAsync(cacheKey, async entry =>
+        {
+            entry.AbsoluteExpirationRelativeToNow = TimeSpan.FromMinutes(5);
+            return await _repo.GetAllNotificationsAsync(request.Cursor, request.Take, ct);
+        });
     }
 }

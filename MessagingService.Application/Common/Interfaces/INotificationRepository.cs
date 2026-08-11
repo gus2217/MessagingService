@@ -12,11 +12,11 @@ public interface INotificationRepository
     Task UpdateAsync(Notification notification, CancellationToken ct = default);
 
     // Read side (Dapper) – highly optimized
-    Task<(IEnumerable<NotificationDto> Items, DateTime? NextCursor)> GetUserNotificationsAsync(
-        string userId, DateTime? cursor, int take, CancellationToken ct = default);
+    Task<(IEnumerable<NotificationDto> Items, DateTime? NextCursor)> GetAllNotificationsAsync(
+        DateTime? cursor, int take, CancellationToken ct = default);
 
-    Task<int> GetUnreadCountAsync(string userId, CancellationToken ct = default);
+    Task<int> GetGlobalUnreadCountAsync(CancellationToken ct = default);
 
     // Bulk operations (raw SQL for speed)
-    Task<int> MarkAllAsReadAsync(string userId, CancellationToken ct = default);
+    Task<int> MarkAllAsReadAsync(CancellationToken ct = default);
 }

@@ -3,33 +3,32 @@ using MessagingService.Application.Common.Interfaces;
 
 namespace MessagingService.Application.Features.Notifications.Commands;
 
-public record MarkAsReadCommand(Guid NotificationId) : IRequest<bool>;
+public record MarkAsReadCommand(Guid? NotificationId = null) : IRequest<bool>;
 
 public class MarkAsReadCommandHandler : IRequestHandler<MarkAsReadCommand, bool>
 {
     private readonly INotificationRepository _repo;
-    private readonly ICurrentUserService _currentUser;
-    private readonly IDistributedCache _cache;
 
-    public MarkAsReadCommandHandler(INotificationRepository repo, ICurrentUserService currentUser, IDistributedCache cache)
+    public MarkAsReadCommandHandler(INotificationRepository repo)
     {
         _repo = repo;
-        _currentUser = currentUser;
-        _cache = cache;
     }
 
     public async Task<bool> Handle(MarkAsReadCommand request, CancellationToken ct)
     {
-        var notification = await _repo.GetByIdAsync(request.NotificationId, ct);
-        if (notification is null || notification.UserId != _currentUser.UserId)
-            return false;
+        if (request.NotificationId.HasValue)
+        {
+            var notification = await _repo.GetByIdAsync(request.NotificationId.Value, ct);
+            if (notification is null)
+                return false;
 
-        notification.MarkAsRead();
-        await _repo.UpdateAsync(notification, ct);
+            notification.MarkAsRead();
+            await _repo.UpdateAsync(notification, ct);
+            return true;
+        }
 
-        // Invalidate unread count cache
-        await _cache.RemoveAsync($"unread_count_{_currentUser.UserId}", ct);
-
+        // Global MarkAllAsRead
+        await _repo.MarkAllAsReadAsync(ct);
         return true;
     }
 }

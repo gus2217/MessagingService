@@ -31,23 +31,21 @@ public class NotificationRepository : INotificationRepository
     }
 
     // --- Dapper for high-performance reads ---
-    public async Task<(IEnumerable<NotificationDto> Items, DateTime? NextCursor)> GetUserNotificationsAsync(
-        string userId, DateTime? cursor, int take, CancellationToken ct = default)
+    public async Task<(IEnumerable<NotificationDto> Items, DateTime? NextCursor)> GetAllNotificationsAsync(
+        DateTime? cursor, int take, CancellationToken ct = default)
     {
-        // Cursor-based pagination: fetch take+1 to determine if more exist
+        // Removed UserId filter for stateless/global notification access
         var sql = @"
             SELECT Id, Title, Message, Type, Priority, Status, CreatedAt, ReadAt, ActionUrl, Metadata
             FROM Notifications
-            WHERE UserId = @UserId
-              AND CreatedAt < @Cursor
+            WHERE CreatedAt < @Cursor
             ORDER BY CreatedAt DESC
             LIMIT @Take;
         ";
 
         var parameters = new
         {
-            UserId = userId,
-            Cursor = cursor ?? DateTime.UtcNow.AddSeconds(1), // if null, get latest
+            Cursor = cursor ?? DateTime.UtcNow.AddSeconds(1),
             Take = take + 1
         };
 
@@ -61,20 +59,19 @@ public class NotificationRepository : INotificationRepository
         return (resultItems, nextCursor);
     }
 
-    public async Task<int> GetUnreadCountAsync(string userId, CancellationToken ct = default)
+    public async Task<int> GetGlobalUnreadCountAsync(CancellationToken ct = default)
     {
-        var sql = "SELECT COUNT(*) FROM Notifications WHERE UserId = @UserId AND Status = 0"; // 0 = Unread
-        return await _connection.ExecuteScalarAsync<int>(sql, new { UserId = userId });
+        var sql = "SELECT COUNT(*) FROM Notifications WHERE Status = 0";
+        return await _connection.ExecuteScalarAsync<int>(sql);
     }
 
-    public async Task<int> MarkAllAsReadAsync(string userId, CancellationToken ct = default)
+    public async Task<int> MarkAllAsReadAsync(CancellationToken ct = default)
     {
-        // Bulk update without loading entities
         var sql = @"
             UPDATE Notifications
             SET Status = 1, ReadAt = @Now
-            WHERE UserId = @UserId AND Status = 0
+            WHERE Status = 0
         ";
-        return await _connection.ExecuteAsync(sql, new { UserId = userId, Now = DateTime.UtcNow });
+        return await _connection.ExecuteAsync(sql, new { Now = DateTime.UtcNow });
     }
 }
