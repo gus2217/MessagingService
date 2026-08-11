@@ -1,0 +1,22 @@
+
+using MessagingService.Application.Features.Notifications.DTOs;
+using MessagingService.Domain.Entities;
+
+namespace MessagingService.Application.Common.Interfaces;
+
+public interface INotificationRepository
+{
+    // Write side (EF)
+    Task AddAsync(Notification notification, CancellationToken ct = default);
+    Task<Notification?> GetByIdAsync(Guid id, CancellationToken ct = default);
+    Task UpdateAsync(Notification notification, CancellationToken ct = default);
+
+    // Read side (Dapper) – highly optimized
+    Task<(IEnumerable<NotificationDto> Items, DateTime? NextCursor)> GetUserNotificationsAsync(
+        string userId, DateTime? cursor, int take, CancellationToken ct = default);
+
+    Task<int> GetUnreadCountAsync(string userId, CancellationToken ct = default);
+
+    // Bulk operations (raw SQL for speed)
+    Task<int> MarkAllAsReadAsync(string userId, CancellationToken ct = default);
+}

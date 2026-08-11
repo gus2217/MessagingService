@@ -1,0 +1,12 @@
+/home/karol/Work/MessagingService/EmailGateway/bin/Debug/net8.0/EmailGateway.deps.json
+/home/karol/Work/MessagingService/EmailGateway/bin/Debug/net8.0/EmailGateway.dll
+/home/karol/Work/MessagingService/EmailGateway/bin/Debug/net8.0/EmailGateway.pdb
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.csproj.AssemblyReference.cache
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.GeneratedMSBuildEditorConfig.editorconfig
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.AssemblyInfoInputs.cache
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.AssemblyInfo.cs
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.csproj.CoreCompileInputs.cache
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.dll
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/refint/EmailGateway.dll
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.pdb
+/home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/ref/EmailGateway.dll

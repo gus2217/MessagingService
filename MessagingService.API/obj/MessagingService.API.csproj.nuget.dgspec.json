@@ -1,0 +1,139 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/karol/Work/MessagingService/MessagingService.API/MessagingService.API.csproj": {}
+  },
+  "projects": {
+    "/home/karol/Work/MessagingService/EmailGateway/EmailGateway.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/karol/Work/MessagingService/EmailGateway/EmailGateway.csproj",
+        "projectName": "EmailGateway",
+        "projectPath": "/home/karol/Work/MessagingService/EmailGateway/EmailGateway.csproj",
+        "packagesPath": "/home/karol/.nuget/packages/",
+        "outputPath": "/home/karol/Work/MessagingService/EmailGateway/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/karol/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.17.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.127/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/karol/Work/MessagingService/MessagingService.API/MessagingService.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/karol/Work/MessagingService/MessagingService.API/MessagingService.API.csproj",
+        "projectName": "MessagingService.API",
+        "projectPath": "/home/karol/Work/MessagingService/MessagingService.API/MessagingService.API.csproj",
+        "packagesPath": "/home/karol/.nuget/packages/",
+        "outputPath": "/home/karol/Work/MessagingService/MessagingService.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/karol/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "/usr/lib64/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/karol/Work/MessagingService/EmailGateway/EmailGateway.csproj": {
+                "projectPath": "/home/karol/Work/MessagingService/EmailGateway/EmailGateway.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.27, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.127/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
