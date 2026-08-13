@@ -1,0 +1,16 @@
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.csproj.AssemblyReference.cache
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.AssemblyInfoInputs.cache
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.AssemblyInfo.cs
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.csproj.CoreCompileInputs.cache
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.sourcelink.json
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/bin/Debug/net8.0/MessagingService.Application.deps.json
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/bin/Debug/net8.0/MessagingService.Application.dll
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/bin/Debug/net8.0/MessagingService.Application.pdb
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/bin/Debug/net8.0/MessagingService.Domain.dll
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/bin/Debug/net8.0/MessagingService.Domain.pdb
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.csproj.CopyComplete
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.dll
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/refint/MessagingService.Application.dll
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/MessagingService.Application.pdb
+/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/Debug/net8.0/ref/MessagingService.Application.dll

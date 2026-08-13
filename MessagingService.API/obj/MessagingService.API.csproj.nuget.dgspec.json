@@ -93,6 +93,9 @@
               },
               "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj": {
                 "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj"
+              },
+              "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj": {
+                "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj"
               }
             }
           }
@@ -110,6 +113,14 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[8.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -177,6 +188,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MassTransit": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.3.0, )"
+            },
             "MediatR": {
               "target": "Package",
               "version": "[14.2.0, )"
@@ -251,6 +270,91 @@
             "MediatR": {
               "target": "Package",
               "version": "[14.2.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj",
+        "projectName": "MessagingService.Infrastructure",
+        "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj",
+        "packagesPath": "/home/vboxuser/.nuget/packages/",
+        "outputPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/vboxuser/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj": {
+                "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.79, )"
+            },
+            "Microsoft.AspNetCore.Authorization": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.2.11, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.29, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             }
           },
           "imports": [

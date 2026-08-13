@@ -1,0 +1,13 @@
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/bin/Debug/net8.0/MessagingService.Domain.deps.json
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/bin/Debug/net8.0/MessagingService.Domain.dll
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/bin/Debug/net8.0/MessagingService.Domain.pdb
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/MessagingService.Domain.csproj.AssemblyReference.cache
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/MessagingService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/MessagingService.Domain.AssemblyInfoInputs.cache
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/MessagingService.Domain.AssemblyInfo.cs
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/MessagingService.Domain.csproj.CoreCompileInputs.cache
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/MessagingService.Domain.sourcelink.json
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/MessagingService.Domain.dll
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/refint/MessagingService.Domain.dll
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/MessagingService.Domain.pdb
+/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/Debug/net8.0/ref/MessagingService.Domain.dll

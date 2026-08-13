@@ -10,3 +10,16 @@
 /home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/refint/EmailGateway.dll
 /home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.pdb
 /home/karol/Work/MessagingService/EmailGateway/obj/Debug/net8.0/ref/EmailGateway.dll
+/home/vboxuser/Desktop/MessagingService/EmailGateway/bin/Debug/net8.0/EmailGateway.deps.json
+/home/vboxuser/Desktop/MessagingService/EmailGateway/bin/Debug/net8.0/EmailGateway.dll
+/home/vboxuser/Desktop/MessagingService/EmailGateway/bin/Debug/net8.0/EmailGateway.pdb
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.csproj.AssemblyReference.cache
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.GeneratedMSBuildEditorConfig.editorconfig
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.AssemblyInfoInputs.cache
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.AssemblyInfo.cs
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.csproj.CoreCompileInputs.cache
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.sourcelink.json
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.dll
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/refint/EmailGateway.dll
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/EmailGateway.pdb
+/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/Debug/net8.0/ref/EmailGateway.dll
