@@ -423,25 +423,24 @@
     ]
   },
   "packageFolders": {
-    "/home/karol/.nuget/packages/": {}
+    "/home/vboxuser/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj",
+      "projectUniqueName": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj",
       "projectName": "MessagingService.Domain",
-      "projectPath": "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj",
-      "packagesPath": "/home/karol/.nuget/packages/",
-      "outputPath": "/home/karol/Work/MessagingService/MessagingService.Domain/obj/",
+      "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj",
+      "packagesPath": "/home/vboxuser/.nuget/packages/",
+      "outputPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/karol/.nuget/NuGet/NuGet.Config"
+        "/home/vboxuser/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -481,7 +480,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.127/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

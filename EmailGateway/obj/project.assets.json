@@ -266,25 +266,24 @@
     ]
   },
   "packageFolders": {
-    "/home/karol/.nuget/packages/": {}
+    "/home/vboxuser/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/karol/Work/MessagingService/EmailGateway/EmailGateway.csproj",
+      "projectUniqueName": "/home/vboxuser/Desktop/MessagingService/EmailGateway/EmailGateway.csproj",
       "projectName": "EmailGateway",
-      "projectPath": "/home/karol/Work/MessagingService/EmailGateway/EmailGateway.csproj",
-      "packagesPath": "/home/karol/.nuget/packages/",
-      "outputPath": "/home/karol/Work/MessagingService/EmailGateway/obj/",
+      "projectPath": "/home/vboxuser/Desktop/MessagingService/EmailGateway/EmailGateway.csproj",
+      "packagesPath": "/home/vboxuser/.nuget/packages/",
+      "outputPath": "/home/vboxuser/Desktop/MessagingService/EmailGateway/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/karol/.nuget/NuGet/NuGet.Config"
+        "/home/vboxuser/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -324,7 +323,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.127/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

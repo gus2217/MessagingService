@@ -1,34 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "/home/karol/Work/MessagingService/MessagingService.Application/MessagingService.Application.csproj": {}
+    "/home/vboxuser/Desktop/MessagingService/MessagingService.Application/MessagingService.Application.csproj": {}
   },
   "projects": {
-    "/home/karol/Work/MessagingService/MessagingService.Application/MessagingService.Application.csproj": {
+    "/home/vboxuser/Desktop/MessagingService/MessagingService.Application/MessagingService.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/karol/Work/MessagingService/MessagingService.Application/MessagingService.Application.csproj",
+        "projectUniqueName": "/home/vboxuser/Desktop/MessagingService/MessagingService.Application/MessagingService.Application.csproj",
         "projectName": "MessagingService.Application",
-        "projectPath": "/home/karol/Work/MessagingService/MessagingService.Application/MessagingService.Application.csproj",
-        "packagesPath": "/home/karol/.nuget/packages/",
-        "outputPath": "/home/karol/Work/MessagingService/MessagingService.Application/obj/",
+        "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Application/MessagingService.Application.csproj",
+        "packagesPath": "/home/vboxuser/.nuget/packages/",
+        "outputPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/karol/.nuget/NuGet/NuGet.Config"
+          "/home/vboxuser/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj": {
-                "projectPath": "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj"
+              "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj": {
+                "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj"
               }
             }
           }
@@ -43,9 +42,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "MediatR": {
+              "target": "Package",
+              "version": "[14.2.0, )"
+            },
             "Microsoft.AspNetCore.SignalR": {
               "target": "Package",
               "version": "[1.2.11, )"
+            },
+            "Microsoft.Extensions.Caching.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.StackExchangeRedis": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             }
           },
           "imports": [
@@ -64,27 +75,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.127/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj": {
+    "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj",
+        "projectUniqueName": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj",
         "projectName": "MessagingService.Domain",
-        "projectPath": "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj",
-        "packagesPath": "/home/karol/.nuget/packages/",
-        "outputPath": "/home/karol/Work/MessagingService/MessagingService.Domain/obj/",
+        "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj",
+        "packagesPath": "/home/vboxuser/.nuget/packages/",
+        "outputPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/karol/.nuget/NuGet/NuGet.Config"
+          "/home/vboxuser/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "/usr/lib64/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -124,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.127/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

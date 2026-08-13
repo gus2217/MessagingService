@@ -19,6 +19,8 @@
     </ItemGroup>
 
     <ItemGroup>
+      <ProjectReference Include="..\MessagingService.Application\MessagingService.Application.csproj" />
+      <ProjectReference Include="..\MessagingService.Domain\MessagingService.Domain.csproj" />
       <ProjectReference Include="..\EmailGateway\EmailGateway.csproj" />
     </ItemGroup>
 

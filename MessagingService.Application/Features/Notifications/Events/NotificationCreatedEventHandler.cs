@@ -1,6 +1,9 @@
 using MediatR;
 using Microsoft.AspNetCore.SignalR;
+using Microsoft.Extensions.Caching.Distributed;
 using MessagingService.Domain.Events;
+using MessagingService.Application.Hubs;
+using MessagingService.Application.Interfaces;
 
 namespace MessagingService.Application.Features.Notifications.Events;
 

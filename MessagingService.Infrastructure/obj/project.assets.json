@@ -1486,20 +1486,6 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
-      "MessagingService.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "MessagingService.Domain": "1.0.0",
-          "Microsoft.AspNetCore.SignalR": "1.2.11"
-        },
-        "compile": {
-          "bin/placeholder/MessagingService.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MessagingService.Application.dll": {}
-        }
-      },
       "MessagingService.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -3553,11 +3539,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MessagingService.Application/1.0.0": {
-      "type": "project",
-      "path": "../MessagingService.Application/MessagingService.Application.csproj",
-      "msbuildProject": "../MessagingService.Application/MessagingService.Application.csproj"
-    },
     "MessagingService.Domain/1.0.0": {
       "type": "project",
       "path": "../MessagingService.Domain/MessagingService.Domain.csproj",
@@ -3567,7 +3548,6 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Dapper >= 2.1.79",
-      "MessagingService.Application >= 1.0.0",
       "MessagingService.Domain >= 1.0.0",
       "Microsoft.AspNetCore.Authorization >= 8.0.29",
       "Microsoft.AspNetCore.SignalR >= 1.2.11",
@@ -3577,36 +3557,32 @@
     ]
   },
   "packageFolders": {
-    "/home/karol/.nuget/packages/": {}
+    "/home/vboxuser/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/karol/Work/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj",
+      "projectUniqueName": "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj",
       "projectName": "MessagingService.Infrastructure",
-      "projectPath": "/home/karol/Work/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj",
-      "packagesPath": "/home/karol/.nuget/packages/",
-      "outputPath": "/home/karol/Work/MessagingService/MessagingService.Infrastructure/obj/",
+      "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/MessagingService.Infrastructure.csproj",
+      "packagesPath": "/home/vboxuser/.nuget/packages/",
+      "outputPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/karol/.nuget/NuGet/NuGet.Config"
+        "/home/vboxuser/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/lib64/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/karol/Work/MessagingService/MessagingService.Application/MessagingService.Application.csproj": {
-              "projectPath": "/home/karol/Work/MessagingService/MessagingService.Application/MessagingService.Application.csproj"
-            },
-            "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj": {
-              "projectPath": "/home/karol/Work/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj"
+            "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj": {
+              "projectPath": "/home/vboxuser/Desktop/MessagingService/MessagingService.Domain/MessagingService.Domain.csproj"
             }
           }
         }
@@ -3664,7 +3640,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.127/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.129/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

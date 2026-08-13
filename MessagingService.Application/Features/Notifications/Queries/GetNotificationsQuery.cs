@@ -1,5 +1,6 @@
 using MediatR;
-using MessagingService.Application.Features.Notifications.DTOs;
+using MessagingService.Domain.Features.Notifications.DTOs;
+using MessagingService.Domain.Common.Interfaces;
 using Microsoft.Extensions.Caching.Memory;
 
 namespace MessagingService.Application.Features.Notifications.Queries;

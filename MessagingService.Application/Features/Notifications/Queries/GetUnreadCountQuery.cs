@@ -1,5 +1,5 @@
 using MediatR;
-using MessagingService.Application.Common.Interfaces;
+using MessagingService.Domain.Common.Interfaces;
 
 namespace MessagingService.Application.Features.Notifications.Queries;
 

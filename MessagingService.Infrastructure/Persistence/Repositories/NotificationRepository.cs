@@ -1,7 +1,7 @@
 using Dapper;
 using System.Data;
-using MessagingService.Application.Common.Interfaces;
-using MessagingService.Application.Features.Notifications.DTOs;
+using MessagingService.Domain.Common.Interfaces;
+using MessagingService.Domain.Features.Notifications.DTOs;
 using MessagingService.Domain.Entities;
 
 namespace MessagingService.Infrastructure.Persistence.Repositories;
