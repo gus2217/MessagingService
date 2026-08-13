@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(MessagingService.Application.Consumers.CreateUserNotificationConsumer).Assembly));
 
 builder.Services.AddMassTransit(x =>
 {
