@@ -18,6 +18,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddSignalR();
+builder.Services.AddMemoryCache();
 builder.Services.AddScoped<MessagingService.Domain.Common.Interfaces.INotificationRepository, MessagingService.Infrastructure.Persistence.Repositories.NotificationRepository>();
 builder.Services.AddTransient<System.Data.IDbConnection>(sp => 
     new Npgsql.NpgsqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
