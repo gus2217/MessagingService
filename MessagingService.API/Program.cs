@@ -1,5 +1,8 @@
 using EmailGateway.Models;
 using EmailGateway.Services;
+using MassTransit;
+using MessagingService.Application.Consumers;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,19 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
+
+builder.Services.AddMassTransit(x =>
+{
+    x.AddConsumer<CreateUserNotificationConsumer>();
+    x.UsingRabbitMq((context, cfg) =>
+    {
+        cfg.Host(builder.Configuration.GetConnectionString("RabbitMQ"));
+        cfg.ReceiveEndpoint("user-notifications", e =>
+        {
+            e.ConfigureConsumer<CreateUserNotificationConsumer>(context);
+        });
+    });
+});
 
 // ──────────────────────────────────────────────────────────────
 // Email Configuration
