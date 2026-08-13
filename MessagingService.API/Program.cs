@@ -19,6 +19,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 
 builder.Services.AddSignalR();
 builder.Services.AddScoped<MessagingService.Domain.Common.Interfaces.INotificationRepository, MessagingService.Infrastructure.Persistence.Repositories.NotificationRepository>();
+builder.Services.AddTransient<System.Data.IDbConnection>(sp => 
+    new Npgsql.NpgsqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
 builder.Services.AddStackExchangeRedisCache(options =>
 {
     options.Configuration = builder.Configuration.GetConnectionString("Redis");

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmailGateway")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d5632d48689a695dc0f91a60b2060aa95b230a8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb8f4aa718dd38a1e9e75bb8f588e3d9bc9ce672")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmailGateway")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmailGateway")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
